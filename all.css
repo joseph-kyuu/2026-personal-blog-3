@@ -39,6 +39,10 @@ ol {
   line-height: 1.2;
 }
 
+.lh-1p5 {
+  line-height: 1.5;
+}
+
 /* 變數 */
 :root {
   /* 顏色 */
@@ -66,6 +70,24 @@ ol {
   --xxx-large: 5rem; /* 80px */
   --display-1: 10rem; /* 160px */
   --display-2: 18.75rem; /* 300px */
+  --spacing-6: 0.75rem; /* 12px */
+  --spacing-7: 3.75rem; /* 60px */
+  --spacing-8: 1.5rem; /* 24px */
+  --spacing-9: 1.25rem; /* 20px */
+  --spacing-10: 3.5rem; /* 56px */
+  --spacing-11: 5.375rem; /* 86px */
+  --spacing-12: 7.5rem; /* 120px */
+  --spacing-13: 14rem; /* 224px */
+  --spacing-14: 44rem; /* 704px */
+  --spacing-15: 12rem; /* 192px */
+  --spacing-16: 5.25rem; /* 84px */
+  --spacing-17: 32.75rem; /* 524px */
+  --spacing-18: 12.875rem; /* 206px */
+  --spacing-19: 8.875rem; /* 142px */
+  --spacing-20: 6rem; /* 96px */
+  --spacing-21: 49rem; /* 784px */
+  --spacing-22: 5.5rem; /* 88px */
+  --spacing-23: 14.5rem; /* 232px */
 }
 
 /* 
@@ -82,10 +104,16 @@ ol {
 .dark-60a{}; 
 */
 
-/* color */
+/* =========================
+   ######### color #########
+   ========================= */
 .neutral-0 {
   color: var(--neutral-0);
 }
+
+/* =========================
+   ####### background ######
+   ========================= */
 
 .bg-primary-50 {
   background: var(--primary-50);
@@ -111,7 +139,10 @@ ol {
   background: var(--dark-60a);
 }
 
-/* font-size */
+/* =========================
+   ####### font-size #######
+   ========================= */
+
 /* 13px */
 .fs-xxxxx-small {
   font-size: 0.8125rem;
@@ -163,4 +194,144 @@ ol {
 /* 300px */
 .fs-display-2 {
   font-size: 18.75rem;
+}
+
+/* spacing */
+/* padding */
+
+/* 12px */
+.py-6 {
+  padding-top: var(--spacing-6);
+  padding-bottom: var(--spacing-6);
+}
+
+.px-6 {
+  padding-left: var(--spacing-6);
+  padding-right: var(--spacing-6);
+}
+
+.mb-7 {
+  margin-bottom: var(--spacing-7);
+}
+
+/* margin */
+
+/* hover */
+.nav-btn:hover {
+  color: var(--neutral-0);
+  background: var(--neutral-700);
+}
+
+/* =========================
+   ####### max-width #######
+   ========================= */
+
+.max-w-1296 {
+  max-width: 1296px;
+}
+
+.max-w-80 {
+  max-width: 80px;
+}
+
+/* =========================
+   ####### position ########
+   ========================= */
+
+.top-56 {
+  top: var(--spacing-10);
+}
+
+.top-96 {
+  top: var(--spacing-20);
+}
+
+.top-120 {
+  top: var(--spacing-12);
+}
+
+.top-206 {
+  top: var(--spacing-18);
+}
+
+.bottom-84 {
+  bottom: var(--spacing-16);
+}
+
+.bottom-88 {
+  bottom: var(--spacing-22);
+}
+
+.bottom-192 {
+  bottom: var(--spacing-15);
+}
+
+.start-86 {
+  left: var(--spacing-11);
+}
+
+.start-224 {
+  left: var(--spacing-13);
+}
+
+.start-524 {
+  left: var(--spacing-17);
+}
+
+.start-704 {
+  left: var(--spacing-14);
+}
+
+.start-784 {
+  left: var(--spacing-21);
+}
+
+.end-142 {
+  right: var(--spacing-19);
+}
+
+.end-232 {
+  right: var(--spacing-23);
+}
+
+/* =========================
+   ####### btn ######
+   ========================= */
+
+.btn-normal {
+  padding-top: var(--spacing-6);
+  padding-bottom: var(--spacing-6);
+  padding-left: var(--spacing-8);
+  padding-right: var(--spacing-8);
+  border-radius: 100rem;
+}
+
+.btn-small {
+  padding-top: var(--spacing-6);
+  padding-bottom: var(--spacing-6);
+  padding-left: var(--spacing-9);
+  padding-right: var(--spacing-9);
+  border-radius: 100rem;
+}
+
+.btn-filled-neutral-700 {
+  color: var(--neutral-0);
+  background: var(--neutral-700);
+}
+
+.btn-filled-neutral-700:hover {
+  color: var(--neutral-0);
+  background: var(--neutral-900);
+}
+
+.btn-outline-neutral-700 {
+  color: var(--neutral-700);
+  background: transparent;
+  border: solid 1px var(--neutral-700);
+}
+
+.btn-outline-neutral-700:hover {
+  color: var(--neutral-700);
+  background: var(--neutral-0);
+  border: solid 1px var(--neutral-700);
 }
