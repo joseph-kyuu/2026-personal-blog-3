@@ -1,0 +1,166 @@
+/* 全域設定 */
+body {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.5;
+  color: var(--neutral-700);
+  background: var(--primary-50);
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: var(--neutral-700);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* line-height */
+.lh-1p2 {
+  line-height: 1.2;
+}
+
+/* 變數 */
+:root {
+  /* 顏色 */
+  --primary-50: #fdf7f1;
+  --primary-100: #fde6cf;
+  --primary-500: #f5b87b;
+  --primary-900: #24140b;
+  --neutral-0: #ffffff;
+  --neutral-500: #737373;
+  --neutral-700: #404040;
+  --neutral-900: #1e1e1e;
+  --black: rgb(0, 0, 0);
+  --dark-40a: rgba(var(--black), 0.4);
+  --dark-60a: rgba(var(--black), 0.6);
+  --xxxxx-small: 0.8125rem; /* 13px */
+  --xxxx-small: 0.875rem; /* 14px */
+  --xxx-small: 1rem; /* 16px */
+  --xx-small: 1.125rem; /* 18px */
+  --x-small: 1.25rem; /* 20px */
+  --small: 1.5rem; /* 24px */
+  --medium: 1.75rem; /* 28px */
+  --large: 2rem; /* 32px */
+  --x-large: 2.5rem; /* 40px */
+  --xx-large: 3rem; /* 48px */
+  --xxx-large: 5rem; /* 80px */
+  --display-1: 10rem; /* 160px */
+  --display-2: 18.75rem; /* 300px */
+}
+
+/* 
+.primary-50{};
+.primary-100{};
+.primary-500{};
+.primary-900{};
+.neutral-0{};
+.neutral-500{};
+.neutral-700{};
+.neutral-900{};
+.black{};
+.dark-40a{};
+.dark-60a{}; 
+*/
+
+/* color */
+.neutral-0 {
+  color: var(--neutral-0);
+}
+
+.bg-primary-50 {
+  background: var(--primary-50);
+}
+
+.bg-neutral-700 {
+  background: var(--neutral-700);
+}
+
+.bg-primary-900 {
+  background: var(--primary-900);
+}
+
+.bg-neutral-0 {
+  background: var(--neutral-0);
+}
+
+.bg-dark-40a {
+  background: var(--dark-40a);
+}
+
+.bg-dark-60a {
+  background: var(--dark-60a);
+}
+
+/* font-size */
+/* 13px */
+.fs-xxxxx-small {
+  font-size: 0.8125rem;
+}
+/* 14px */
+.fs-xxxx-small {
+  font-size: 0.875rem;
+}
+/* 16px */
+.fs-xxx-small {
+  font-size: 1rem;
+}
+/* 18px */
+.fs-xx-small {
+  font-size: 1.125rem;
+}
+/* 20px */
+.fs-x-small {
+  font-size: 1.25rem;
+}
+/* 24px */
+.fs-small {
+  font-size: 1.5rem;
+}
+/* 28px */
+.fs-medium {
+  font-size: 1.75rem;
+}
+/* 32px */
+.fs-large {
+  font-size: 2rem;
+}
+/* 40px */
+.fs-x-large {
+  font-size: 2.5rem;
+}
+/* 48px */
+.fs-xx-large {
+  font-size: 3rem;
+}
+/* 80px */
+.fs-xxx-large {
+  font-size: 5rem;
+}
+/* 160px */
+.fs-display-1 {
+  font-size: 10rem;
+}
+/* 300px */
+.fs-display-2 {
+  font-size: 18.75rem;
+}
