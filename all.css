@@ -88,6 +88,9 @@ ol {
   --spacing-21: 49rem; /* 784px */
   --spacing-22: 5.5rem; /* 88px */
   --spacing-23: 14.5rem; /* 232px */
+  --spacing-24: 5rem; /* 80px */
+  --spacing-25: 2.5rem; /* 40px */
+  --spacing-26: 1.75rem; /* 28px */
 }
 
 /* 
@@ -137,6 +140,10 @@ ol {
 
 .bg-dark-60a {
   background: var(--dark-60a);
+}
+
+.bg-e-commerce {
+  background: url(./img/service_case_1.png);
 }
 
 /* =========================
@@ -196,8 +203,26 @@ ol {
   font-size: 18.75rem;
 }
 
-/* spacing */
+/* =========================
+   ######## spacing ########
+   ========================= */
+
 /* padding */
+
+/* 24px */
+.p-8 {
+  padding: var(--spacing-8);
+}
+
+/* 40px */
+.p-25 {
+  padding: var(--spacing-25);
+}
+
+/* 28px */
+.p-26 {
+  padding: var(--spacing-26);
+}
 
 /* 12px */
 .py-6 {
@@ -205,16 +230,48 @@ ol {
   padding-bottom: var(--spacing-6);
 }
 
+/* 80px */
+.py-24 {
+  padding-top: var(--spacing-24);
+  padding-bottom: var(--spacing-24);
+}
+
 .px-6 {
   padding-left: var(--spacing-6);
   padding-right: var(--spacing-6);
 }
 
+/* margin */
+
+/* 12px */
+.me-6 {
+  margin-right: var(--spacing-6);
+}
+
+/* 24px */
+.me-8 {
+  margin-right: var(--spacing-8);
+}
+
+/* 40px */
+.mb-25 {
+  margin-bottom: var(--spacing-25);
+}
+
+/* 12px */
+.mb-6 {
+  margin-bottom: var(--spacing-6);
+}
+
+/* 60px */
 .mb-7 {
   margin-bottom: var(--spacing-7);
 }
 
-/* margin */
+/* 24px */
+.mb-8 {
+  margin-bottom: var(--spacing-8);
+}
 
 /* hover */
 .nav-btn:hover {
@@ -225,13 +282,27 @@ ol {
 /* =========================
    ####### max-width #######
    ========================= */
+.max-w-20 {
+  max-width: 20px;
+}
+
+.max-w-80 {
+  max-width: 80px;
+}
+
+.max-w-386 {
+  max-width: 386px;
+}
 
 .max-w-1296 {
   max-width: 1296px;
 }
 
-.max-w-80 {
-  max-width: 80px;
+/* =========================
+   ####### max-height ######
+   ========================= */
+.max-h-48 {
+  max-height: 48px;
 }
 
 /* =========================
@@ -314,24 +385,35 @@ ol {
   border-radius: 100rem;
 }
 
-.btn-filled-neutral-700 {
+.btn-filled-neutral-700,
+.btn-icon-filled-neutral-700 {
   color: var(--neutral-0);
   background: var(--neutral-700);
+  border: none;
 }
 
-.btn-filled-neutral-700:hover {
+.btn-filled-neutral-700:hover,
+.btn-icon-filled-neutral-700:hover {
   color: var(--neutral-0);
   background: var(--neutral-900);
 }
 
-.btn-outline-neutral-700 {
+.btn-outline-neutral-700,
+.btn-icon-outline-neutral-700 {
   color: var(--neutral-700);
   background: transparent;
   border: solid 1px var(--neutral-700);
 }
 
-.btn-outline-neutral-700:hover {
+.btn-outline-neutral-700:hover,
+.btn-icon-outline-neutral-700:hover {
   color: var(--neutral-700);
-  background: var(--neutral-0);
+  background: var(--primary-50);
   border: solid 1px var(--neutral-700);
+}
+
+.btn-icon-normal,
+.btn-icon-small {
+  padding: var(--spacing-6);
+  border-radius: 100rem;
 }
