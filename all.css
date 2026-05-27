@@ -55,8 +55,8 @@ ol {
   --neutral-700: #404040;
   --neutral-900: #1e1e1e;
   --black: rgb(0, 0, 0);
-  --dark-40a: rgba(var(--black), 0.4);
-  --dark-60a: rgba(var(--black), 0.6);
+  --dark-40a: rgba(0, 0, 0, 0.4);
+  --dark-60a: rgba(0, 0, 0, 0.6);
   --xxxxx-small: 0.8125rem; /* 13px */
   --xxxx-small: 0.875rem; /* 14px */
   --xxx-small: 1rem; /* 16px */
@@ -91,6 +91,8 @@ ol {
   --spacing-24: 5rem; /* 80px */
   --spacing-25: 2.5rem; /* 40px */
   --spacing-26: 1.75rem; /* 28px */
+  --spacing-27: 2rem; /* 32px */
+  --spacing-28: 4.25rem; /* 68px */
 }
 
 /* 
@@ -144,6 +146,12 @@ ol {
 
 .bg-e-commerce {
   background: url(./img/service_case_1.png);
+}
+
+.bg-subscription {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./img/subscription_bg.png);
 }
 
 /* =========================
@@ -230,6 +238,12 @@ ol {
   padding-bottom: var(--spacing-6);
 }
 
+/* 20px */
+.py-9 {
+  padding-top: var(--spacing-9);
+  padding-bottom: var(--spacing-9);
+}
+
 /* 80px */
 .py-24 {
   padding-top: var(--spacing-24);
@@ -239,6 +253,10 @@ ol {
 .px-6 {
   padding-left: var(--spacing-6);
   padding-right: var(--spacing-6);
+}
+
+.pe-27 {
+  padding-left: var(--spacing-27);
 }
 
 /* margin */
@@ -253,14 +271,19 @@ ol {
   margin-right: var(--spacing-8);
 }
 
-/* 40px */
-.mb-25 {
-  margin-bottom: var(--spacing-25);
-}
-
 /* 12px */
 .mb-6 {
   margin-bottom: var(--spacing-6);
+}
+
+/* 24px */
+.mb-8 {
+  margin-bottom: var(--spacing-8);
+}
+
+/* 40px */
+.mb-25 {
+  margin-bottom: var(--spacing-25);
 }
 
 /* 60px */
@@ -268,9 +291,9 @@ ol {
   margin-bottom: var(--spacing-7);
 }
 
-/* 24px */
-.mb-8 {
-  margin-bottom: var(--spacing-8);
+/* 68px */
+.mb-28 {
+  margin-bottom: var(--spacing-28);
 }
 
 /* hover */
@@ -292,6 +315,10 @@ ol {
 
 .max-w-386 {
   max-width: 386px;
+}
+
+.max-w-746 {
+  max-width: 746px;
 }
 
 .max-w-1296 {
@@ -366,9 +393,19 @@ ol {
 }
 
 /* =========================
-   ####### btn ######
+   ######### utility ########
    ========================= */
 
+/* 禁止 textarea 拉伸 */
+.resize-none {
+  resize: none;
+}
+
+/* =========================
+   ########## btn ##########
+   ========================= */
+
+/* 按鈕基底 */
 .btn-normal {
   padding-top: var(--spacing-6);
   padding-bottom: var(--spacing-6);
@@ -385,6 +422,8 @@ ol {
   border-radius: 100rem;
 }
 
+/* 實心按鈕 */
+/* 實心按鈕-neutral-700 */
 .btn-filled-neutral-700,
 .btn-icon-filled-neutral-700 {
   color: var(--neutral-0);
@@ -398,6 +437,19 @@ ol {
   background: var(--neutral-900);
 }
 
+/* 實心按鈕-neutral-0 */
+.btn-filled-neutral-0 {
+  color: var(--neutral-700);
+  background: var(--neutral-0);
+  border: none;
+}
+
+.btn-filled-neutral-0:hover {
+  color: var(--neutral-700);
+  background: var(--primary-50);
+}
+
+/* 外框按鈕-neutral-700 */
 .btn-outline-neutral-700,
 .btn-icon-outline-neutral-700 {
   color: var(--neutral-700);
@@ -412,8 +464,50 @@ ol {
   border: solid 1px var(--neutral-700);
 }
 
+/* 符號按鈕 */
+
 .btn-icon-normal,
 .btn-icon-small {
   padding: var(--spacing-6);
   border-radius: 100rem;
+}
+
+/* =========================
+   ######## form ########
+   ========================= */
+
+/* input */
+.text-input-normal {
+  padding-top: var(--spacing-9);
+  padding-bottom: var(--spacing-9);
+  padding-left: var(--spacing-27);
+  border-radius: 100rem;
+  background: transparent;
+  border: solid 1px var(--neutral-0);
+}
+
+/* input 的 focus */
+.text-input-normal:focus,
+.textarea-normal:focus {
+  background: transparent;
+  color: var(--neutral-0);
+  font-size: var(--xxx-small);
+  border-color: var(--neutral-0);
+  box-shadow: none;
+}
+
+/* input 的 placholder */
+.form-control::placeholder,
+.textarea-normal::placeholder {
+  font-size: var(--xxx-small);
+  color: var(--neutral-0);
+}
+
+.textarea-normal {
+  padding-top: var(--spacing-9);
+  padding-bottom: var(--spacing-9);
+  padding-left: var(--spacing-27);
+  border-radius: 2.5rem;
+  background: transparent;
+  border: solid 1px var(--neutral-0);
 }
