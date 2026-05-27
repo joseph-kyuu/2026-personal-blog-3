@@ -15,6 +15,10 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
@@ -24,6 +28,7 @@
     <link rel="stylesheet" href="./all.css" />
   </head>
   <body>
+    <!-- header -->
     <header>
       <!-- 導覽列 -->
       <nav
@@ -125,6 +130,7 @@
         </div>
       </section>
     </header>
+    <!-- main -->
     <main>
       <!-- service -->
       <section class="py-24 bg-primary-900">
@@ -425,13 +431,15 @@
           <!-- 文章列表 -->
           <ul class="list-unstyled d-flex">
             <li class="me-8">
-              <div class="card">
-                <img
-                  src="./img/blog_2.png"
-                  class=""
-                  alt="文章圖片"
-                  title="文章圖片"
-                />
+              <div class="card border-0">
+                <div class="mb-6">
+                  <img
+                    src="./img/blog_2.png"
+                    class=""
+                    alt="文章圖片"
+                    title="文章圖片"
+                  />
+                </div>
                 <div class="card-body p-0">
                   <div class="mb-6">
                     <h3 class="fs-xxx-small fw-medium lh-1p5">
@@ -519,14 +527,16 @@
               </div>
             </li>
             <li>
-              <div class="card">
-                <img
-                  src="./img/blog_2.png"
-                  class=""
-                  alt="文章圖片"
-                  title="文章圖片"
-                />
-                <div class="card-body">
+              <div class="card border-0">
+                <div class="mb-6">
+                  <img
+                    src="./img/blog_2.png"
+                    class=""
+                    alt="文章圖片"
+                    title="文章圖片"
+                  />
+                </div>
+                <div class="card-body p-0">
                   <div class="mb-6">
                     <h3 class="fs-xxx-small fw-medium lh-1p5">
                       UIUX 設計 · 設計規範 · 前端技術
@@ -567,7 +577,168 @@
           </ul>
         </div>
       </section>
+      <!-- subscription -->
+      <section class="bg-subscription">
+        <div class="container d-flex">
+          <!-- 圖片 -->
+          <div class="me-8">
+            <img src="./img/subscription.png" alt="訂閱圖片" title="訂閱圖片" />
+          </div>
+          <!-- 訂閱標題、表單 -->
+          <div class="py-24 px-25 max-w-746">
+            <!-- subscription 標題 -->
+            <div class="mb-8">
+              <h2 class="neutral-0">
+                <span class="fs-xxx-small fw-bold">電子報訂閱</span>
+                <br />
+                <span class="fs-xxx-large fw-bold lh-1p2">SUBSCRIPTION</span>
+              </h2>
+              <p class="neutral-0 fs-xxx-small fw-medium">
+                你也在追求設計美感與技術落地的完美平衡嗎？作為資深設計師兼工程師，我深知跨領域協作的痛點。訂閱電子報，我將分享如何利用
+                AI 工具提升產能！
+              </p>
+            </div>
+            <form>
+              <input
+                type="email"
+                class="form-control fw-medium text-input-normal"
+                id="exampleFormControlInput1"
+                placeholder="電子信箱"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- footer -->
+    <footer>
+      <section class="bg-primary-900">
+        <div class="container py-24 d-flex">
+          <!-- footer 標題、社群、電子郵件 -->
+          <div class="me-8">
+            <!-- footer 標題 -->
+            <div class="mb-28">
+              <div class="mb-8">
+                <h2 class="neutral-0">
+                  <span class="fs-xxx-small fw-bold">與我聯絡</span>
+                  <br />
+                  <span class="fs-xxx-large fw-bold lh-1p2">CONTACT</span>
+                </h2>
+              </div>
+              <p class="neutral-0 fs-xxx-small fw-medium">
+                若有數位產品設計和開發相關問題
+                <br />
+                歡迎填寫表單 或 直接與我聯絡！
+              </p>
+            </div>
+            <!-- 社群、電子郵件 -->
+            <div>
+              <ul class="list-unstyled d-flex mb-8">
+                <!-- IG -->
+                <li class="me-6">
+                  <a
+                    class="p-3 border rounded-circle"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./img/svg/social/instgram.svg"
+                      alt="instgram符號"
+                      title="instgram符號"
+                    />
+                  </a>
+                </li>
+                <!-- LINE -->
+                <li class="me-6">
+                  <a
+                    class="p-3 border rounded-circle"
+                    href="https://www.line.me/tw/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./img/svg/social/line.svg"
+                      alt="instgram符號"
+                      title="instgram符號"
+                    />
+                  </a>
+                </li>
+                <!-- LINKED -->
+                <li>
+                  <a
+                    class="p-3 border rounded-circle"
+                    href="https://tw.linkedin.com/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./img/svg/social/linked.svg"
+                      alt="instgram符號"
+                      title="instgram符號"
+                    />
+                  </a>
+                </li>
+              </ul>
+              <!-- 電子郵件 -->
+              <a class="neutral-0 d-flex" href="mailto:service@hexschool.com">
+                <span class="me-6">
+                  <img
+                    src="./img/svg/UI/mail.svg"
+                    alt="電子信箱符號"
+                    title="電子信箱符號"
+                  />
+                </span>
+                service@hexschool.com
+              </a>
+            </div>
+          </div>
+          <!-- 表單 -->
+          <form>
+            <!-- 姓名、手機號碼 -->
+            <div class="d-flex mb-8">
+              <input
+                type="email"
+                class="form-control fw-medium text-input-normal me-8"
+                id="exampleFormControlInput1"
+                placeholder="姓名"
+              />
+              <input
+                type="email"
+                class="form-control fw-medium text-input-normal"
+                id="exampleFormControlInput1"
+                placeholder="手機號碼"
+              />
+            </div>
+            <!-- 電子郵箱 -->
+            <div class="mb-8">
+              <input
+                type="email"
+                class="form-control fw-medium text-input-normal me-8"
+                id="exampleFormControlInput1"
+                placeholder="電子郵箱"
+              />
+            </div>
+            <!-- 備註 -->
+            <div class="mb-8">
+              <textarea
+                type="email"
+                class="form-control fw-medium textarea-normal me-8 resize-none"
+                id="exampleFormControlInput1"
+                placeholder="備註"
+                rows="4"
+              ></textarea>
+            </div>
+            <!-- 提交按鈕 -->
+            <div>
+              <button
+                type="button"
+                class="btn btn-normal btn-filled-neutral-0 w-100"
+              >
+                送出
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </footer>
     <script src="./all.js"></script>
   </body>
 </html>
