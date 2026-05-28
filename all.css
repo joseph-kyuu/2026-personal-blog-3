@@ -93,6 +93,7 @@ ol {
   --spacing-26: 1.75rem; /* 28px */
   --spacing-27: 2rem; /* 32px */
   --spacing-28: 4.25rem; /* 68px */
+  --spacing-29: 0.5rem; /* 8px */
 }
 
 /* 
@@ -145,7 +146,15 @@ ol {
 }
 
 .bg-e-commerce {
-  background: url(./img/service_case_1.png);
+  background: url(./img/project_1.png);
+}
+
+.bg-personal {
+  background: url(./img/project_2.png);
+}
+
+.bg-brand {
+  background: url(./img/project_3.png);
 }
 
 .bg-subscription {
@@ -255,6 +264,12 @@ ol {
   padding-right: var(--spacing-6);
 }
 
+/* 40px */
+.px-25 {
+  padding-left: var(--spacing-25);
+  padding-right: var(--spacing-25);
+}
+
 .pe-27 {
   padding-left: var(--spacing-27);
 }
@@ -328,8 +343,13 @@ ol {
 /* =========================
    ####### max-height ######
    ========================= */
+
 .max-h-48 {
   max-height: 48px;
+}
+
+.max-h-64 {
+  max-height: 64px;
 }
 
 /* =========================
@@ -488,7 +508,8 @@ ol {
 
 /* input 的 focus */
 .text-input-normal:focus,
-.textarea-normal:focus {
+.textarea-normal:focus,
+.input-button-addons-none:focus {
   background: transparent;
   color: var(--neutral-0);
   font-size: var(--xxx-small);
@@ -503,6 +524,24 @@ ol {
   color: var(--neutral-0);
 }
 
+/* button addons */
+.input-button-addons-none {
+  padding: 0px;
+  border: none;
+  background: transparent;
+}
+
+.input-button-addons-normal {
+  padding-top: var(--spacing-29);
+  padding-bottom: var(--spacing-29);
+  padding-left: var(--spacing-27);
+  padding-right: var(--spacing-29);
+  border-radius: 100rem;
+  background: transparent;
+  border: solid 1px var(--neutral-0);
+}
+
+/* textarea */
 .textarea-normal {
   padding-top: var(--spacing-9);
   padding-bottom: var(--spacing-9);
@@ -510,4 +549,8 @@ ol {
   border-radius: 2.5rem;
   background: transparent;
   border: solid 1px var(--neutral-0);
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
 }
