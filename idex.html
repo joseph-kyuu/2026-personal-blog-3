@@ -32,14 +32,14 @@
     <header>
       <!-- 導覽列 -->
       <nav
-        class="container px-0 py-6 d-flex justify-content-between align-items-center"
+        class="container px-0 py-lg-6 py-2 d-flex justify-content-between align-items-center"
       >
         <!-- 品牌標誌 -->
-        <a href="＃">
+        <a class="max-w-110 max-lg-w-123" href="＃">
           <img src="./img/device-pc.svg" alt="品牌標誌" title="品牌標誌" />
         </a>
         <!-- 主選單 -->
-        <ul class="list-unstyled d-flex align-items-center">
+        <ul class="list-unstyled align-items-center d-none d-lg-flex">
           <li>
             <a class="fs-xxx-smal fw-medium py-1 px-6 me-4 nav-btn" href="＃"
               >服務項目</a
@@ -61,6 +61,10 @@
             >
           </li>
         </ul>
+        <!-- 漢堡選單 -->
+        <a class="p-6 d-lg-none" href="#">
+          <img src="./img/menu.svg" alt="主選單標誌" />
+        </a>
       </nav>
       <!-- hero -->
       <section class="position-relative overflow-hidden">
@@ -97,8 +101,8 @@
           class="container px-0 d-flex justify-content-between flex-column-reverse flex-xl-row"
         >
           <!-- 主副標題、CTA -->
-          <div class="d-flex flex-column justify-content-center">
-            <div class="mb-7">
+          <div class="d-flex flex-column justify-content-center p-lg-0 pb-4">
+            <div class="mb-lg-7 mb-27">
               <!-- 主標題 -->
               <div class="mb-4">
                 <h1 class="fs-xxx-large fw-bold">
@@ -120,24 +124,26 @@
             <div>
               <button
                 type="button"
-                class="btn btn-normal btn-filled-neutral-700 me-4"
+                class="btn btn-lg-normal btn-small btn-filled-neutral-700 fs-xxxx-small fs-lg-xxx-small me-lg-4 me-6"
               >
                 與我聯絡
               </button>
               <button
                 type="button"
-                class="btn btn-normal btn-outline-neutral-700"
+                class="btn btn-lg-normal btn-small btn-outline-neutral-700 fs-xxxx-small fs-lg-xxx-small"
               >
                 我的履歷
               </button>
             </div>
           </div>
           <!-- 圖片 -->
-          <img
-            src="./img/index_person.png"
-            alt="Nelson照片"
-            title="Nelson照片"
-          />
+          <div class="mb-lg-0 mb-4">
+            <img
+              src="./img/index_person.png"
+              alt="Nelson照片"
+              title="Nelson照片"
+            />
+          </div>
         </div>
       </section>
     </header>
@@ -620,7 +626,7 @@
             />
           </div>
           <!-- 訂閱標題、表單 -->
-          <div class="py-24 px-25 max-w-746">
+          <div class="py-lg-24 py-25 px-lg-25 max-w-746">
             <!-- subscription 標題 -->
             <div class="mb-8">
               <div class="mb-8">
@@ -636,7 +642,6 @@
                 AI 工具提升產能！
               </p>
             </div>
-
             <form class="d-flex input-button-addons-normal max-h-64">
               <input
                 type="email"
@@ -661,11 +666,13 @@
     <!-- footer -->
     <footer>
       <section class="bg-primary-900">
-        <div class="container py-24 d-flex justify-content-between">
+        <div
+          class="container py-24 d-flex justify-content-between flex-column flex-lg-row"
+        >
           <!-- footer 標題、社群、電子郵件 -->
-          <div class="me-8">
+          <div class="me-lg-8">
             <!-- footer 標題 -->
-            <div class="mb-28">
+            <div class="mb-lg-28 mb-8">
               <div class="mb-8">
                 <h2 class="neutral-0 fs-xxx-small fw-bold lh-1p5">與我聯絡</h2>
                 <h2 class="neutral-0 fs-xxx-large fw-bold lh-1p2">CONTACT</h2>
@@ -677,7 +684,7 @@
               </p>
             </div>
             <!-- 社群、電子郵件 -->
-            <div>
+            <div class="d-none d-lg-block">
               <ul class="list-unstyled d-flex mb-8">
                 <!-- IG -->
                 <li class="me-6">
@@ -736,24 +743,24 @@
             </div>
           </div>
           <!-- 表單 -->
-          <form class="px-25 w-100 max-w-746">
+          <form class="px-lg-25 w-100 max-w-746 mb-lg-0 mb-8">
             <!-- 姓名、手機號碼 -->
-            <div class="d-flex mb-8">
+            <div class="d-flex flex-column flex-lg-row mb-lg-8 mb-6">
               <input
-                type="email"
-                class="form-control fw-medium text-input-normal me-8 max-h-64"
+                type="text"
+                class="form-control fw-medium text-input-normal me-lg-8 max-h-64 mb-lg-0 mb-6"
                 id="exampleFormControlInput1"
                 placeholder="姓名"
               />
               <input
-                type="email"
+                type="text"
                 class="form-control fw-medium text-input-normal max-h-64"
                 id="exampleFormControlInput1"
                 placeholder="手機號碼"
               />
             </div>
             <!-- 電子郵箱 -->
-            <div class="mb-8">
+            <div class="mb-lg-8 mb-6">
               <input
                 type="email"
                 class="form-control fw-medium text-input-normal max-h-64"
@@ -762,7 +769,7 @@
               />
             </div>
             <!-- 備註 -->
-            <div class="mb-8">
+            <div class="mb-lg-8 mb-6">
               <textarea
                 type="email"
                 class="form-control fw-medium textarea-normal resize-none"
@@ -781,6 +788,64 @@
               </button>
             </div>
           </form>
+          <!-- 社群、電子郵件 -->
+          <div class="d-lg-none">
+            <ul class="list-unstyled d-flex mb-lg-8 mb-6">
+              <!-- IG -->
+              <li class="me-6">
+                <a
+                  class="p-3 border rounded-circle"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/svg/social/instgram.svg"
+                    alt="instgram符號"
+                    title="instgram符號"
+                  />
+                </a>
+              </li>
+              <!-- LINE -->
+              <li class="me-6">
+                <a
+                  class="p-3 border rounded-circle"
+                  href="https://www.line.me/tw/"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/svg/social/line.svg"
+                    alt="instgram符號"
+                    title="instgram符號"
+                  />
+                </a>
+              </li>
+              <!-- LINKED -->
+              <li>
+                <a
+                  class="p-3 border rounded-circle"
+                  href="https://tw.linkedin.com/"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/svg/social/linked.svg"
+                    alt="instgram符號"
+                    title="instgram符號"
+                  />
+                </a>
+              </li>
+            </ul>
+            <!-- 電子郵件 -->
+            <a class="neutral-0 d-flex" href="mailto:service@hexschool.com">
+              <span class="me-6">
+                <img
+                  src="./img/svg/UI/mail.svg"
+                  alt="電子信箱符號"
+                  title="電子信箱符號"
+                />
+              </span>
+              service@hexschool.com
+            </a>
+          </div>
         </div>
       </section>
     </footer>
