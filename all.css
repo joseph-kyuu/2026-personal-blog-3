@@ -94,6 +94,8 @@ ol {
   --spacing-27: 2rem; /* 32px */
   --spacing-28: 4.25rem; /* 68px */
   --spacing-29: 0.5rem; /* 8px */
+  --spacing-30: 1.625rem; /* 26px */
+  --spacing-31: 20rem; /* 320px */
 }
 
 /* 
@@ -161,6 +163,9 @@ ol {
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(./img/subscription_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* =========================
@@ -169,55 +174,55 @@ ol {
 
 /* 13px */
 .fs-xxxxx-small {
-  font-size: 0.8125rem;
+  font-size: var(--xxxxx-small);
 }
 /* 14px */
 .fs-xxxx-small {
-  font-size: 0.875rem;
+  font-size: var(--xxxx-small);
 }
 /* 16px */
 .fs-xxx-small {
-  font-size: 1rem;
+  font-size: var(--xxx-small);
 }
 /* 18px */
 .fs-xx-small {
-  font-size: 1.125rem;
+  font-size: var(--xx-small);
 }
 /* 20px */
 .fs-x-small {
-  font-size: 1.25rem;
+  font-size: var(--x-small);
 }
 /* 24px */
 .fs-small {
-  font-size: 1.5rem;
+  font-size: var(--small);
 }
 /* 28px */
 .fs-medium {
-  font-size: 1.75rem;
+  font-size: var(--medium);
 }
 /* 32px */
 .fs-large {
-  font-size: 2rem;
+  font-size: var(--large);
 }
 /* 40px */
 .fs-x-large {
-  font-size: 2.5rem;
+  font-size: var(--x-large);
 }
 /* 48px */
 .fs-xx-large {
-  font-size: 3rem;
+  font-size: var(--xx-large);
 }
 /* 80px */
 .fs-xxx-large {
-  font-size: 5rem;
+  font-size: var(--xxx-large);
 }
 /* 160px */
 .fs-display-1 {
-  font-size: 10rem;
+  font-size: var(--display-1);
 }
 /* 300px */
 .fs-display-2 {
-  font-size: 18.75rem;
+  font-size: var(--display-2);
 }
 
 /* =========================
@@ -286,6 +291,8 @@ ol {
   margin-right: var(--spacing-8);
 }
 
+/* margin-bottom */
+
 /* 12px */
 .mb-6 {
   margin-bottom: var(--spacing-6);
@@ -353,9 +360,19 @@ ol {
 }
 
 /* =========================
+   ####### min-width #######
+   ========================= */
+.min-w-260 {
+  min-width: 260px;
+}
+
+/* =========================
    ####### position ########
    ========================= */
 
+.top-26 {
+  top: var(--spacing-30);
+}
 .top-56 {
   top: var(--spacing-10);
 }
@@ -384,6 +401,10 @@ ol {
   bottom: var(--spacing-15);
 }
 
+.bottom-320 {
+  bottom: var(--spacing-31);
+}
+
 .start-86 {
   left: var(--spacing-11);
 }
@@ -410,6 +431,15 @@ ol {
 
 .end-232 {
   right: var(--spacing-23);
+}
+
+/* 負值 */
+.start-n15 {
+  left: -15px;
+}
+
+.end-n13 {
+  right: -13px;
 }
 
 /* =========================
@@ -553,4 +583,76 @@ ol {
 
 .flex-shrink-0 {
   flex-shrink: 0;
+}
+
+/* =========================
+   ##### no-scroll-bar #####
+   ========================= */
+
+.no-scrollbar {
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome / Safari / Edge */
+}
+
+/* =========================
+   ########## RWD  #########
+   ========================= */
+
+@media (min-width: 992px) {
+  /* 24px */
+  .fs-lg-small {
+    font-size: var(--small);
+  }
+
+  /* 14px */
+  .fs-lg-xxxx-small {
+    font-size: var(--xxxx-small);
+  }
+
+  /* 16px */
+  .fs-lg-xxx-small {
+    font-size: var(--xxx-small);
+  }
+
+  .mb-lg-6 {
+    margin-bottom: var(--spacing-6) !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-xl-96 {
+    top: var(--spacing-30);
+  }
+
+  .start-xl-784 {
+    left: var(--spacing-21);
+  }
+
+  .bottom-xl-88 {
+    bottom: var(--spacing-22);
+  }
+
+  .end-xl-232 {
+    right: var(--spacing-23);
+  }
+}
+
+@media (min-width: 1400px) {
+  .me-xxl-8 {
+    margin-right: var(--spacing-8);
+  }
+}
+
+@media (min-width: 1800px) {
+  .max-xxxl-w-200 {
+    max-width: 200px;
+  }
+
+  .max-xxxl-w-160 {
+    max-width: 160px;
+  }
 }
