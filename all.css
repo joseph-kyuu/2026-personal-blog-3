@@ -101,6 +101,8 @@ ol {
   --spacing-34: 16.375rem; /* 262px */
   --spacing-35: 11.375rem; /* 182px */
   --spacing-36: 17.5rem; /* 280px */
+  --spacing-37: 6.875rem; /* 110px */
+  --spacing-38: 5.75rem; /* 92px */
 }
 
 /* 
@@ -173,10 +175,29 @@ ol {
   background-size: cover;
 }
 
+.bg-intergate {
+  background: url(./img/project_4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .bg-subscription {
   background:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(./img/subscription_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-project {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./img/project_banner_mobile.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -276,6 +297,12 @@ ol {
   padding-bottom: var(--spacing-9);
 }
 
+/* 24px */
+.py-8 {
+  padding-top: var(--spacing-8);
+  padding-bottom: var(--spacing-8);
+}
+
 /* 40px */
 .py-25 {
   padding-top: var(--spacing-25);
@@ -286,6 +313,18 @@ ol {
 .py-24 {
   padding-top: var(--spacing-24);
   padding-bottom: var(--spacing-24);
+}
+
+/* 110px */
+.py-37 {
+  padding-top: var(--spacing-37);
+  padding-bottom: var(--spacing-37);
+}
+
+/* 142px */
+.py-19 {
+  padding-top: var(--spacing-19);
+  padding-bottom: var(--spacing-19);
 }
 
 /* 12px */
@@ -300,6 +339,18 @@ ol {
   padding-right: var(--spacing-25);
 }
 
+/* 92px */
+.px-38 {
+  padding-left: var(--spacing-38);
+  padding-right: var(--spacing-38);
+}
+
+/* 110px */
+.px-37 {
+  padding-left: var(--spacing-37);
+  padding-right: var(--spacing-37);
+}
+
 .pe-27 {
   padding-left: var(--spacing-27);
 }
@@ -307,6 +358,16 @@ ol {
 /* 280px */
 .pt-36 {
   padding-top: var(--spacing-36) !important;
+}
+
+/* 40px */
+.pb-25 {
+  padding-bottom: var(--spacing-25);
+}
+
+/* 80px */
+.pb-24 {
+  padding-bottom: var(--spacing-24) !important;
 }
 
 /* margin */
@@ -318,7 +379,7 @@ ol {
 
 /* 24px */
 .me-8 {
-  margin-right: var(--spacing-8);
+  margin-right: var(--spacing-24);
 }
 
 /* margin-bottom */
@@ -353,10 +414,28 @@ ol {
   margin-bottom: var(--spacing-28);
 }
 
-/* hover */
+/* 80px */
+.mb-24 {
+  margin-bottom: var(--spacing-24);
+}
+
+/* =========================
+   ####### hover #######
+   ========================= */
+
 .nav-btn:hover {
   color: var(--neutral-0);
   background: var(--neutral-700);
+}
+
+.projects-btn:hover {
+  color: var(--neutral-0);
+  background: var(--primary-900);
+}
+
+.projects-btn-active {
+  color: var(--neutral-0);
+  background: var(--primary-900);
 }
 
 /* =========================
@@ -676,6 +755,11 @@ ol {
     font-size: var(--xxx-small);
   }
 
+  /* 18px */
+  .fs-md-xx-small {
+    font-size: var(--xx-small);
+  }
+
   /* 24px */
   .fs-md-small {
     font-size: var(--small);
@@ -684,6 +768,11 @@ ol {
   /* 28px */
   .fs-md-medium {
     font-size: var(--medium);
+  }
+
+  /* 48px */
+  .fs-md-xx-large {
+    font-size: var(--xx-large);
   }
 
   /* 80px */
@@ -708,12 +797,40 @@ ol {
     padding: var(--spacing-25);
   }
 
+  /* 12px */
+  .py-md-6 {
+    padding-top: var(--spacing-6) !important;
+    padding-bottom: var(--spacing-6) !important;
+  }
+
   /* 80px */
   .py-md-24 {
     padding-top: var(--spacing-24);
     padding-bottom: var(--spacing-24);
   }
 
+  /* 110px */
+  .py-md-37 {
+    padding-top: var(--spacing-37);
+    padding-bottom: var(--spacing-37);
+  }
+
+  /* 110px */
+  .px-md-37 {
+    padding-left: var(--spacing-37);
+    padding-right: var(--spacing-37);
+  }
+
+  /* 92px */
+  .px-md-38 {
+    padding-left: var(--spacing-38);
+    padding-right: var(--spacing-38);
+  }
+
+  /* 80px */
+  .pb-md-24 {
+    padding-bottom: var(--spacing-24);
+  }
   /* 12px */
   .me-md-6 {
     margin-right: var(--spacing-6) !important;
@@ -752,6 +869,7 @@ ol {
     max-height: 48px;
   }
 
+  /* background */
   .bg-md-e-commerce {
     background: url(./img/service_case_1.png);
     background-repeat: no-repeat;
@@ -768,6 +886,15 @@ ol {
 
   .bg-md-brand {
     background: url(./img/project_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg-md-project {
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(./img/project_banner.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
