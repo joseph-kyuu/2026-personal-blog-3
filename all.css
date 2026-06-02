@@ -153,15 +153,24 @@ ol {
 }
 
 .bg-e-commerce {
-  background: url(./img/project_1.png);
+  background: url(./img/project-card1-phone.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .bg-personal {
-  background: url(./img/project_2.png);
+  background: url(./img/project-card2-phone.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .bg-brand {
-  background: url(./img/project_3.png);
+  background: url(./img/project-card3-phone.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .bg-subscription {
@@ -741,6 +750,27 @@ ol {
   /* max-height */
   .max-md-h-48 {
     max-height: 48px;
+  }
+
+  .bg-md-e-commerce {
+    background: url(./img/service_case_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg-md-personal {
+    background: url(./img/project_2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg-md-brand {
+    background: url(./img/project_3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
