@@ -22,6 +22,9 @@ body,
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
 ul,
 ol {
@@ -103,6 +106,8 @@ ol {
   --spacing-36: 17.5rem; /* 280px */
   --spacing-37: 6.875rem; /* 110px */
   --spacing-38: 5.75rem; /* 92px */
+  --spacing-39: 0.125rem; /* 2px */
+  --spacing-40: 2.375rem; /* 38px */
 }
 
 /* 
@@ -265,6 +270,11 @@ ol {
    ========================= */
 
 /* padding */
+/* 2px */
+.p-39 {
+  padding: var(--spacing-39);
+}
+
 /* 12px */
 .p-6 {
   padding: var(--spacing-6);
@@ -275,14 +285,19 @@ ol {
   padding: var(--spacing-8);
 }
 
-/* 40px */
-.p-25 {
-  padding: var(--spacing-25);
+/* 32px */
+.p-27 {
+  padding: var(--spacing-27);
 }
 
 /* 28px */
 .p-26 {
   padding: var(--spacing-26);
+}
+
+/* 40px */
+.p-25 {
+  padding: var(--spacing-25);
 }
 
 /* 12px */
@@ -333,6 +348,12 @@ ol {
   padding-right: var(--spacing-6);
 }
 
+/* 38px */
+.px-40 {
+  padding-left: var(--spacing-40);
+  padding-right: var(--spacing-40);
+}
+
 /* 40px */
 .px-25 {
   padding-left: var(--spacing-25);
@@ -379,7 +400,7 @@ ol {
 
 /* 24px */
 .me-8 {
-  margin-right: var(--spacing-24);
+  margin-right: var(--spacing-8);
 }
 
 /* margin-bottom */
@@ -420,7 +441,7 @@ ol {
 }
 
 /* =========================
-   ####### hover #######
+   ####### hover、active #######
    ========================= */
 
 .nav-btn:hover {
@@ -434,6 +455,16 @@ ol {
 }
 
 .projects-btn-active {
+  color: var(--neutral-0);
+  background: var(--primary-900);
+}
+
+.service-item:hover {
+  color: var(--neutral-0);
+  background: var(--primary-900);
+}
+
+.service-item-active {
   color: var(--neutral-0);
   background: var(--primary-900);
 }
@@ -463,6 +494,10 @@ ol {
 
 .max-w-351 {
   max-width: 351px;
+}
+
+.max-w-636 {
+  max-width: 636px;
 }
 
 .max-w-746 {
@@ -516,6 +551,14 @@ ol {
 
 .top-206 {
   top: var(--spacing-18);
+}
+
+.top-n20 {
+  top: -5px;
+}
+
+.left-n20 {
+  left: -21px;
 }
 
 .bottom-84 {
@@ -744,6 +787,16 @@ ol {
 }
 
 /* =========================
+   ########## 視覺 #########
+   ========================= */
+
+.time-line {
+  width: 0.5px;
+  height: 40px;
+  background: var(--neutral-0);
+}
+
+/* =========================
    ########## RWD  #########
    ========================= */
 
@@ -836,6 +889,11 @@ ol {
     margin-right: var(--spacing-6) !important;
   }
 
+  /* 20px */
+  .me-md-9 {
+    margin-right: var(--spacing-9) !important;
+  }
+
   /* 24px */
   .me-md-8 {
     margin-right: var(--spacing-8);
@@ -862,6 +920,10 @@ ol {
 
   .max-md-w-386 {
     max-width: 386px;
+  }
+
+  .max-md-w-1076 {
+    max-width: 1076px;
   }
 
   /* max-height */
@@ -934,6 +996,11 @@ ol {
   .px-lg-25 {
     padding-left: var(--spacing-25);
     padding-right: var(--spacing-25);
+  }
+
+  /* 12px */
+  .mb-lg-6 {
+    margin-bottom: var(--spacing-6) !important;
   }
 
   /* 24px */
