@@ -131,6 +131,10 @@ ol {
   color: var(--neutral-0);
 }
 
+.border-primary-900 {
+  border-color: var(--primary-900) !important;
+}
+
 /* =========================
    ####### background ######
    ========================= */
