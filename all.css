@@ -960,7 +960,7 @@ ol {
   .bg-md-project {
     background:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(./img/project_banner.png);
+      url(./img/service_banner.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
