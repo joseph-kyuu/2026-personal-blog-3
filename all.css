@@ -109,6 +109,8 @@ ol {
   --spacing-39: 0.125rem; /* 2px */
   --spacing-40: 2.375rem; /* 38px */
   --spacing-41: 0.375rem; /* 6px */
+  --spacing-42: 8.75rem; /* 140px */
+  --spacing-43: 33rem; /* 528px */
 }
 
 /* 
@@ -130,6 +132,10 @@ ol {
    ========================= */
 .neutral-0 {
   color: var(--neutral-0);
+}
+
+.primary-50 {
+  color: var(--primary-50);
 }
 
 .border-primary-900 {
@@ -217,6 +223,15 @@ ol {
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(./img/service_banner_mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-blog {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./img/blog_banner_mobile.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -577,6 +592,10 @@ ol {
   top: var(--spacing-18);
 }
 
+.top-140 {
+  top: var(--spacing-42);
+}
+
 .top-n20 {
   top: -5px;
 }
@@ -635,6 +654,10 @@ ol {
 
 .start-784 {
   left: var(--spacing-21);
+}
+
+.start-528 {
+  left: var(--spacing-43);
 }
 
 .end-142 {
@@ -1020,6 +1043,15 @@ ol {
     background:
       linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url(./img/service_banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .bg-md-service {
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(./img/blog_banner.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
