@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nelson的部落格</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./all.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="">
+      <!-- 導覽列 -->
+      <nav
+        class="container px-sm-0 px-6 py-lg-6 py-2 d-flex justify-content-between align-items-center"
+      >
+        <!-- 品牌標誌 -->
+        <a class="max-w-110 max-lg-w-123" href="index.html">
+          <img src="./img/device-pc.svg" alt="品牌標誌" title="品牌標誌" />
+        </a>
+        <!-- 主選單 -->
+        <ul class="list-unstyled align-items-center d-none d-lg-flex">
+          <li>
+            <a class="fs-xxx-smal fw-medium py-1 px-6 me-4 nav-btn" href="＃"
+              >服務項目</a
+            >
+          </li>
+          <li>
+            <a class="fs-xxx-smal fw-medium py-1 px-6 me-4 nav-btn" href="＃"
+              >專案作品</a
+            >
+          </li>
+          <li>
+            <a class="fs-xxx-smal fw-medium py-1 px-6 me-4 nav-btn" href="＃"
+              >部落格</a
+            >
+          </li>
+          <li>
+            <a class="fs-xxx-smal fw-medium py-1 px-6 nav-btn" href="＃"
+              >與我聯絡</a
+            >
+          </li>
+        </ul>
+        <!-- 漢堡選單 -->
+        <a class="p-6 d-lg-none" href="#">
+          <img src="./img/menu.svg" alt="主選單標誌" />
+        </a>
+      </nav>
+      <!-- hero -->
+      <section
+        class="text-center py-md-37 py-19 bg-blog bg-md-blog position-relative overflow-hidden"
+      >
+        <div class="mb-2">
+          <h2 class="fs-x-large fs-md-xxx-large neutral-0 fw-bold lh-1p2">
+            BLOGS
+          </h2>
+        </div>
+        <h2 class="fs-x-large fs-md-xx-large neutral-0 fw-bold lh-1p2">
+          部落格
+        </h2>
+        <h2
+          class="fs-display-2 primary-50 opacity-25 fw-bold lh-1p2 position-absolute top-140 start-50 translate-middle-x"
+        >
+          BLOG
+        </h2>
+      </section>
+    </header>
+    <!-- main -->
+    <main class="bg-neutral-0">
+      <!-- 文章選單、文章列表 -->
+      <section class="py-md-24 py-25 container">
+        <!-- 選單、文章 -->
+        <div class="row mb-24 flex-lg-row flex-column">
+          <!-- 選單 -->
+          <div class="col-lg-2 col-12">
+            <ul
+              class="list-unstyled pe-3 py-lg-0 py-8 d-flex flex-lg-column flex-row overflow-auto no-scrollbar"
+            >
+              <li class="max-w-180 text-nowrap">
+                <a
+                  class="py-lg-6 py-2 px-6 px-lg-0 fs-md-xx-small fw-bold blog-btn blog-btn-active text-center"
+                  href="#"
+                  >全部</a
+                >
+              </li>
+              <li class="max-w-180 text-nowrap">
+                <a
+                  class="text-center py-lg-6 py-2 px-6 px-lg-0 fs-md-xx-small fw-bold blog-btn"
+                  href="#"
+                  >品牌設計
+                </a>
+              </li>
+              <li class="max-w-180 text-nowrap">
+                <a
+                  class="text-center py-lg-6 py-2 px-6 px-lg-0 fs-md-xx-small fw-bold blog-btn"
+                  href="#"
+                  >平面設計
+                </a>
+              </li>
+              <li class="max-w-180 text-nowrap">
+                <a
+                  class="text-center py-lg-6 py-2 px-6 px-lg-0 fs-md-xx-small fw-bold blog-btn"
+                  href="#"
+                  >UIUX 設計
+                </a>
+              </li>
+              <li class="max-w-180 text-nowrap">
+                <a
+                  class="text-center py-lg-6 py-2 px-6 px-lg-0 fs-md-xx-small fw-bold blog-btn"
+                  href="#"
+                  >網頁設計
+                </a>
+              </li>
+              <li class="max-w-180 text-nowrap">
+                <a
+                  class="text-center py-lg-6 py-2 px-6 px-lg-0 fs-md-xx-small fw-bold blog-btn"
+                  href="#"
+                  >設計規範
+                </a>
+              </li>
+              <li class="max-w-180 text-nowrap">
+                <a
+                  class="text-center py-lg-6 py-2 px-6 px-lg-0 fs-md-xx-small fw-bold blog-btn"
+                  href="#"
+                  >前端技術
+                </a>
+              </li>
+              <li class="max-w-180 text-nowrap">
+                <a
+                  class="text-center py-lg-6 py-2 px-6 px-lg-0 fs-md-xx-small fw-bold blog-btn"
+                  href="#"
+                  >後端架構
+                </a>
+              </li>
+              <li class="max-w-180 text-nowrap">
+                <a
+                  class="text-center py-lg-6 py-2 px-6 px-lg-0 fs-md-xx-small fw-bold blog-btn"
+                  href="#"
+                  >AI 趨勢應用
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- 文章 -->
+          <div class="col-lg-10 col-12">
+            <ul class="list-unstyled">
+              <!-- 文章一 -->
+              <li class="mb-8">
+                <!-- 卡片 -->
+                <div
+                  class="card border-0 flex-md-row align-items-center mb-md-0 md-2"
+                >
+                  <!-- 圖片 -->
+                  <div>
+                    <img
+                      src="./img/blogs_1.png"
+                      class=""
+                      alt="文章圖片"
+                      title="文章圖片"
+                    />
+                  </div>
+                  <!-- 標籤、說明、其他資訊 -->
+                  <div class="card-body p-0 ps-md-8 max-w-550">
+                    <!-- 標籤  -->
+                    <div class="mb-lg-6 mb-2">
+                      <h3
+                        class="fs-lg-xxx-small fs-xxxx-small fw-medium lh-1p5"
+                      >
+                        UIUX 設計 · 設計規範 · 前端技術
+                      </h3>
+                    </div>
+                    <!-- 說明 -->
+                    <div class="mb-lg-6 mb-2">
+                      <h3
+                        class="card-title fs-lg-small fs-x-small fw-bold lh-1p5 mb-0"
+                      >
+                        網頁裡的微互動藝術：利用 CSS 與 JS
+                        動畫為諮詢網站注入靈魂並提升用戶轉化率
+                      </h3>
+                    </div>
+                    <!-- 其他資訊 -->
+                    <p class="card-text d-flex justify-content-between">
+                      <time class="fw-medium fs-xxxx-small">Oct 16, 2022</time>
+                      <span
+                        class="fw-medium fs-lg-xxxx-small fs-xxxxx-small d-flex"
+                      >
+                        <span class="d-flex me-6">
+                          <img
+                            class="max-w-20 me-1"
+                            src="./img/visibility_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="觀看標誌"
+                            title="觀看標誌"
+                          />
+                          <span>110 views</span>
+                        </span>
+                        <span class="d-flex">
+                          <img
+                            class="max-w-20 me-1"
+                            src="./img/share_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="分享標誌"
+                            title="分享標誌"
+                          />
+                          <span>2 shares</span>
+                        </span>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <!-- 文章二 -->
+              <li class="mb-8">
+                <!-- 卡片 -->
+                <div
+                  class="card border-0 flex-md-row align-items-center mb-md-0 md-2"
+                >
+                  <!-- 圖片 -->
+                  <div>
+                    <img
+                      src="./img/blogs_2.png"
+                      class=""
+                      alt="文章圖片"
+                      title="文章圖片"
+                    />
+                  </div>
+                  <!-- 標籤、說明、其他資訊 -->
+                  <div class="card-body p-0 ps-md-8 max-w-550">
+                    <!-- 標籤  -->
+                    <div class="mb-lg-6 mb-2">
+                      <h3
+                        class="fs-lg-xxx-small fs-xxxx-small fw-medium lh-1p5"
+                      >
+                        UIUX 設計 · 設計規範 · 前端技術
+                      </h3>
+                    </div>
+                    <!-- 說明 -->
+                    <div class="mb-lg-6 mb-2">
+                      <h3
+                        class="card-title fs-lg-small fs-x-small fw-bold lh-1p5 mb-0"
+                      >
+                        10年職人手記：如何運用 Figma 與 Storybook
+                        打造美感與邏輯兼具的企業級設計系統
+                      </h3>
+                    </div>
+                    <!-- 其他資訊 -->
+                    <p class="card-text d-flex justify-content-between">
+                      <time class="fw-medium fs-xxxx-small">Oct 16, 2022</time>
+                      <span
+                        class="fw-medium fs-lg-xxxx-small fs-xxxxx-small d-flex"
+                      >
+                        <span class="d-flex me-6">
+                          <img
+                            class="max-w-20 me-1"
+                            src="./img/visibility_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="觀看標誌"
+                            title="觀看標誌"
+                          />
+                          <span>110 views</span>
+                        </span>
+                        <span class="d-flex">
+                          <img
+                            class="max-w-20 me-1"
+                            src="./img/share_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="分享標誌"
+                            title="分享標誌"
+                          />
+                          <span>2 shares</span>
+                        </span>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <!-- 文章三 -->
+              <li class="mb-8">
+                <!-- 卡片 -->
+                <div
+                  class="card border-0 flex-md-row align-items-center mb-md-0 md-2"
+                >
+                  <!-- 圖片 -->
+                  <div>
+                    <img
+                      src="./img/blogs_3.png"
+                      class=""
+                      alt="文章圖片"
+                      title="文章圖片"
+                    />
+                  </div>
+                  <!-- 標籤、說明、其他資訊 -->
+                  <div class="card-body p-0 ps-md-8 max-w-550">
+                    <!-- 標籤  -->
+                    <div class="mb-lg-6 mb-2">
+                      <h3
+                        class="fs-lg-xxx-small fs-xxxx-small fw-medium lh-1p5"
+                      >
+                        品牌設計 · 平面設計 · UIUX 設計術
+                      </h3>
+                    </div>
+                    <!-- 說明 -->
+                    <div class="mb-lg-6 mb-2">
+                      <h3
+                        class="card-title fs-lg-small fs-x-small fw-bold lh-1p5 mb-0"
+                      >
+                        從平面識別到數位體驗：以「植感生活」為例，探討跨媒體品牌視覺在網頁上的精準轉譯
+                      </h3>
+                    </div>
+                    <!-- 其他資訊 -->
+                    <p class="card-text d-flex justify-content-between">
+                      <time class="fw-medium fs-xxxx-small">Oct 16, 2022</time>
+                      <span
+                        class="fw-medium fs-lg-xxxx-small fs-xxxxx-small d-flex"
+                      >
+                        <span class="d-flex me-6">
+                          <img
+                            class="max-w-20 me-1"
+                            src="./img/visibility_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="觀看標誌"
+                            title="觀看標誌"
+                          />
+                          <span>110 views</span>
+                        </span>
+                        <span class="d-flex">
+                          <img
+                            class="max-w-20 me-1"
+                            src="./img/share_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="分享標誌"
+                            title="分享標誌"
+                          />
+                          <span>2 shares</span>
+                        </span>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <!-- 文章四 -->
+              <li class="mb-8">
+                <!-- 卡片 -->
+                <div
+                  class="card border-0 flex-md-row align-items-center mb-md-0 md-2"
+                >
+                  <!-- 圖片 -->
+                  <div>
+                    <img
+                      src="./img/blogs_4.png"
+                      class=""
+                      alt="文章圖片"
+                      title="文章圖片"
+                    />
+                  </div>
+                  <!-- 標籤、說明、其他資訊 -->
+                  <div class="card-body p-0 ps-md-8 max-w-550">
+                    <!-- 標籤  -->
+                    <div class="mb-lg-6 mb-2">
+                      <h3
+                        class="fs-lg-xxx-small fs-xxxx-small fw-medium lh-1p5"
+                      >
+                        UIUX 設計 · 前端技術 · AI 趨勢應用
+                      </h3>
+                    </div>
+                    <!-- 說明 -->
+                    <div class="mb-lg-6 mb-2">
+                      <h3
+                        class="card-title fs-lg-small fs-x-small fw-bold lh-1p5 mb-0"
+                      >
+                        當 AI
+                        遇上介面設計：資深設計師如何利用生成式工具重塑前端開發工作流與視覺想像力
+                      </h3>
+                    </div>
+                    <!-- 其他資訊 -->
+                    <p class="card-text d-flex justify-content-between">
+                      <time class="fw-medium fs-xxxx-small">Oct 16, 2022</time>
+                      <span
+                        class="fw-medium fs-lg-xxxx-small fs-xxxxx-small d-flex"
+                      >
+                        <span class="d-flex me-6">
+                          <img
+                            class="max-w-20 me-1"
+                            src="./img/visibility_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="觀看標誌"
+                            title="觀看標誌"
+                          />
+                          <span>110 views</span>
+                        </span>
+                        <span class="d-flex">
+                          <img
+                            class="max-w-20 me-1"
+                            src="./img/share_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="分享標誌"
+                            title="分享標誌"
+                          />
+                          <span>2 shares</span>
+                        </span>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <!-- 文章五 -->
+              <li>
+                <!-- 卡片 -->
+                <div
+                  class="card border-0 flex-md-row align-items-center mb-md-0 md-2"
+                >
+                  <!-- 圖片 -->
+                  <div>
+                    <img
+                      src="./img/blogs_5.png"
+                      class=""
+                      alt="文章圖片"
+                      title="文章圖片"
+                    />
+                  </div>
+                  <!-- 標籤、說明、其他資訊 -->
+                  <div class="card-body p-0 ps-md-8 max-w-550">
+                    <!-- 標籤  -->
+                    <div class="mb-lg-6 mb-2">
+                      <h3
+                        class="fs-lg-xxx-small fs-xxxx-small fw-medium lh-1p5"
+                      >
+                        UIUX 設計 · 前端技術 · AI 趨勢應用
+                      </h3>
+                    </div>
+                    <!-- 說明 -->
+                    <div class="mb-lg-6 mb-2">
+                      <h3
+                        class="card-title fs-lg-small fs-x-small fw-bold lh-1p5 mb-0"
+                      >
+                        揭開金融 App 的設計密碼：如何優化 Open Bank API
+                        的複雜數據呈現與後端串接安全性
+                      </h3>
+                    </div>
+                    <!-- 其他資訊 -->
+                    <p class="card-text d-flex justify-content-between">
+                      <time class="fw-medium fs-xxxx-small">Oct 16, 2022</time>
+                      <span
+                        class="fw-medium fs-lg-xxxx-small fs-xxxxx-small d-flex"
+                      >
+                        <span class="d-flex me-6">
+                          <img
+                            class="max-w-20 me-1"
+                            src="./img/visibility_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="觀看標誌"
+                            title="觀看標誌"
+                          />
+                          <span>110 views</span>
+                        </span>
+                        <span class="d-flex">
+                          <img
+                            class="max-w-20 me-1"
+                            src="./img/share_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                            alt="分享標誌"
+                            title="分享標誌"
+                          />
+                          <span>2 shares</span>
+                        </span>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 頁碼 -->
+        <div>
+          <nav>
+            <ul
+              class="list-unstyled d-flex align-items-center justify-content-md-end justify-content-center"
+            >
+              <!-- 上一頁 -->
+              <li class="me-3">
+                <a class="px-6 py-45 blog-pageination rounded-circle" href="">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6.6665 10L11.8135 5L12.4998 5.66671L8.03914 10L12.4998 14.3333L11.8135 15L6.6665 10Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <!-- 第 1 頁 -->
+              <li class="me-3">
+                <a
+                  class="py-2 px-3 blog-pageination rounded-circle blog-btn-active"
+                  href=""
+                >
+                  1
+                </a>
+              </li>
+              <!-- 第 2 頁 -->
+              <li class="me-3">
+                <a class="py-2 px-3 blog-pageination rounded-circle" href="">
+                  2
+                </a>
+              </li>
+              <!-- 第 3 頁 -->
+              <li class="me-3">
+                <a class="py-2 px-3 blog-pageination rounded-circle" href="">
+                  3
+                </a>
+              </li>
+              <li class="me-3">
+                <a class="py-2 px-3 blog-pageination" href=""> ... </a>
+              </li>
+              <li>
+                <a class="py-2 px-3 blog-pageination rounded-circle" href=""
+                  >20
+                </a>
+              </li>
+              <!-- 下一頁 -->
+              <li>
+                <a class="px-6 py-45 blog-pageination rounded-circle" href="">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.3333 10L8.18632 15L7.5 14.3333L11.9607 10L7.5 5.66671L8.18632 5L13.3333 10Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- subscription -->
+      <section class="bg-subscription">
+        <div class="container d-flex flex-column flex-xxl-row px-0">
+          <!-- 圖片 -->
+          <div class="me-xxl-8 flex-shrink-0">
+            <img
+              class="w-100"
+              src="./img/subscription.png"
+              alt="訂閱圖片"
+              title="訂閱圖片"
+            />
+          </div>
+          <!-- 訂閱標題、表單 -->
+          <div class="py-lg-24 py-25 px-lg-25 max-w-746 px-6">
+            <!-- subscription 標題 -->
+            <div class="mb-8">
+              <div class="mb-8">
+                <h2 class="neutral-0 fs-xxx-small fw-bold lh-1p5">
+                  電子報訂閱
+                </h2>
+                <h2 class="neutral-0 fs-md-xxx-large fs-x-large fw-bold lh-1p2">
+                  SUBSCRIPTION
+                </h2>
+              </div>
+              <p class="neutral-0 fs-md-xxx-small fs-xxxx-small fw-medium">
+                你也在追求設計美感與技術落地的完美平衡嗎？作為資深設計師兼工程師，我深知跨領域協作的痛點。訂閱電子報，我將分享如何利用
+                AI 工具提升產能！
+              </p>
+            </div>
+            <form class="d-flex input-button-addons-normal max-h-64">
+              <input
+                type="email"
+                class="form-control fw-medium input-button-addons-none"
+                id="exampleFormControlInput1"
+                placeholder="電子信箱"
+              />
+              <!-- 提交按鈕 -->
+              <div class="flex-shrink-0">
+                <button
+                  type="button"
+                  class="btn btn-lg-normal btn-small btn-filled-neutral-0"
+                >
+                  送出
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <section class="bg-primary-900">
+        <div
+          class="container py-md-24 py-25 d-flex justify-content-between flex-column flex-lg-row"
+        >
+          <!-- footer 標題、社群、電子郵件 -->
+          <div class="me-lg-8">
+            <!-- footer 標題 -->
+            <div class="mb-lg-28 mb-8">
+              <div class="mb-md-8 mb-6">
+                <h2
+                  class="neutral-0 s-md-xxx-small fs-xxxx-small fw-bold lh-1p5"
+                >
+                  與我聯絡
+                </h2>
+                <h2 class="neutral-0 fs-md-xxx-large fs-x-large fw-bold lh-1p2">
+                  CONTACT
+                </h2>
+              </div>
+              <p class="neutral-0 fs-md-xxx-small fs-xxxx-small fw-medium">
+                若有數位產品設計和開發相關問題
+                <br />
+                歡迎填寫表單 或 直接與我聯絡！
+              </p>
+            </div>
+            <!-- 社群、電子郵件 -->
+            <div class="d-none d-lg-block">
+              <ul class="list-unstyled d-flex mb-8">
+                <!-- IG -->
+                <li class="me-6">
+                  <a
+                    class="p-3 border rounded-circle"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./img/svg/social/instgram.svg"
+                      alt="instgram符號"
+                      title="instgram符號"
+                    />
+                  </a>
+                </li>
+                <!-- LINE -->
+                <li class="me-6">
+                  <a
+                    class="p-3 border rounded-circle"
+                    href="https://www.line.me/tw/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./img/svg/social/line.svg"
+                      alt="instgram符號"
+                      title="instgram符號"
+                    />
+                  </a>
+                </li>
+                <!-- LINKED -->
+                <li>
+                  <a
+                    class="p-3 border rounded-circle"
+                    href="https://tw.linkedin.com/"
+                    target="_blank"
+                  >
+                    <img
+                      src="./img/svg/social/linked.svg"
+                      alt="instgram符號"
+                      title="instgram符號"
+                    />
+                  </a>
+                </li>
+              </ul>
+              <!-- 電子郵件 -->
+              <a class="neutral-0 d-flex" href="mailto:service@hexschool.com">
+                <span class="me-6">
+                  <img
+                    src="./img/svg/UI/mail.svg"
+                    alt="電子信箱符號"
+                    title="電子信箱符號"
+                  />
+                </span>
+                service@hexschool.com
+              </a>
+            </div>
+          </div>
+          <!-- 表單 -->
+          <form class="px-lg-25 w-100 max-w-746 mb-lg-0 mb-8">
+            <!-- 姓名、手機號碼 -->
+            <div class="d-flex flex-column flex-lg-row mb-lg-8 mb-6">
+              <input
+                type="text"
+                class="form-control fw-medium text-input-normal me-lg-8 max-h-64 mb-lg-0 mb-6"
+                id="exampleFormControlInput1"
+                placeholder="姓名"
+              />
+              <input
+                type="text"
+                class="form-control fw-medium text-input-normal max-h-64"
+                id="exampleFormControlInput1"
+                placeholder="手機號碼"
+              />
+            </div>
+            <!-- 電子郵箱 -->
+            <div class="mb-lg-8 mb-6">
+              <input
+                type="email"
+                class="form-control fw-medium text-input-normal max-h-64"
+                id="exampleFormControlInput1"
+                placeholder="電子郵箱"
+              />
+            </div>
+            <!-- 備註 -->
+            <div class="mb-lg-8 mb-6">
+              <textarea
+                type="email"
+                class="form-control fw-medium textarea-normal resize-none"
+                id="exampleFormControlInput1"
+                placeholder="備註"
+                rows="4"
+              ></textarea>
+            </div>
+            <!-- 提交按鈕 -->
+            <div>
+              <button
+                type="button"
+                class="btn btn-normal btn-filled-neutral-0 w-100"
+              >
+                送出
+              </button>
+            </div>
+          </form>
+          <!-- 社群、電子郵件 -->
+          <div class="d-lg-none">
+            <ul class="list-unstyled d-flex mb-lg-8 mb-6">
+              <!-- IG -->
+              <li class="me-6">
+                <a
+                  class="p-3 border rounded-circle"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/svg/social/instgram.svg"
+                    alt="instgram符號"
+                    title="instgram符號"
+                  />
+                </a>
+              </li>
+              <!-- LINE -->
+              <li class="me-6">
+                <a
+                  class="p-3 border rounded-circle"
+                  href="https://www.line.me/tw/"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/svg/social/line.svg"
+                    alt="instgram符號"
+                    title="instgram符號"
+                  />
+                </a>
+              </li>
+              <!-- LINKED -->
+              <li>
+                <a
+                  class="p-3 border rounded-circle"
+                  href="https://tw.linkedin.com/"
+                  target="_blank"
+                >
+                  <img
+                    src="./img/svg/social/linked.svg"
+                    alt="instgram符號"
+                    title="instgram符號"
+                  />
+                </a>
+              </li>
+            </ul>
+            <!-- 電子郵件 -->
+            <a
+              class="neutral-0 d-flex fs-md-xxx-small fs-xxxx-small"
+              href="mailto:service@hexschool.com"
+            >
+              <span class="me-6 max-md-w-24 max-w-20">
+                <img
+                  src="./img/svg/UI/mail.svg"
+                  alt="電子信箱符號"
+                  title="電子信箱符號"
+                />
+              </span>
+              service@hexschool.com
+            </a>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="./all.js"></script>
+  </body>
+</html>
