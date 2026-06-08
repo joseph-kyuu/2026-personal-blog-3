@@ -113,7 +113,6 @@ ol {
   --spacing-43: 33rem; /* 528px */
   --spacing-44: 4.5rem; /* 72px */
   --spacing-45: 0.625rem; /* 10px */
-  --spacing-46: 3.125rem; /* 50px */
 }
 
 /* 
@@ -146,7 +145,7 @@ ol {
 }
 
 .border-neutral-500 {
-  border-color: var(--eutral-500) !important;
+  border-color: var(--neutral-500) !important;
 }
 
 /* =========================
@@ -364,12 +363,6 @@ ol {
 .py-25 {
   padding-top: var(--spacing-25);
   padding-bottom: var(--spacing-25);
-}
-
-/* 50px */
-.py-46 {
-  padding-top: var(--spacing-46) !important;
-  padding-bottom: var(--spacing-46) !important;
 }
 
 /* 80px */
@@ -1141,6 +1134,11 @@ ol {
   /* 48px */
   .fs-lg-xx-large {
     font-size: var(--xx-large);
+  }
+
+  /* 12px */
+  .p-lg-6 {
+    padding: var(--spacing-6) !important;
   }
 
   /* 24px */
