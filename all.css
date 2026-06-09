@@ -133,7 +133,7 @@ ol {
    ######### color #########
    ========================= */
 .neutral-0 {
-  color: var(--neutral-0);
+  color: var(--neutral-0) !important;
 }
 
 .primary-50 {
@@ -142,6 +142,10 @@ ol {
 
 .border-primary-900 {
   border-color: var(--primary-900) !important;
+}
+
+.border-neutral-500 {
+  border-color: var(--neutral-500) !important;
 }
 
 /* =========================
@@ -157,7 +161,7 @@ ol {
 }
 
 .bg-primary-900 {
-  background: var(--primary-900);
+  background: var(--primary-900) !important;
 }
 
 .bg-neutral-0 {
@@ -339,8 +343,8 @@ ol {
 
 /* 12px */
 .py-6 {
-  padding-top: var(--spacing-6);
-  padding-bottom: var(--spacing-6);
+  padding-top: var(--spacing-6) !important;
+  padding-bottom: var(--spacing-6) !important;
 }
 
 /* 20px */
@@ -387,8 +391,8 @@ ol {
 
 /* 12px */
 .px-6 {
-  padding-left: var(--spacing-6);
-  padding-right: var(--spacing-6);
+  padding-left: var(--spacing-6) !important;
+  padding-right: var(--spacing-6) !important;
 }
 
 /* 38px */
@@ -462,6 +466,11 @@ ol {
 /* 12px */
 .mb-6 {
   margin-bottom: var(--spacing-6);
+}
+
+/* 20px */
+.mb-9 {
+  margin-bottom: var(--spacing-9);
 }
 
 /* 24px */
@@ -874,6 +883,13 @@ ol {
 }
 
 /* =========================
+   ########## 表格 #########
+   ========================= */
+.table-equal-width {
+  table-layout: fixed;
+  width: 100%;
+}
+/* =========================
    ########## RWD  #########
    ========================= */
 
@@ -1090,11 +1106,6 @@ ol {
 
 /* 992px */
 @media (min-width: 992px) {
-  /* 24px */
-  .fs-lg-small {
-    font-size: var(--small);
-  }
-
   /* 14px */
   .fs-lg-xxxx-small {
     font-size: var(--xxxx-small);
@@ -1103,6 +1114,36 @@ ol {
   /* 16px */
   .fs-lg-xxx-small {
     font-size: var(--xxx-small);
+  }
+
+  /* 20px */
+  .fs-lg-x-small {
+    font-size: var(--x-small);
+  }
+
+  /* 24px */
+  .fs-lg-small {
+    font-size: var(--small);
+  }
+
+  /* 32px */
+  .fs-lg-large {
+    font-size: var(--large);
+  }
+
+  /* 48px */
+  .fs-lg-xx-large {
+    font-size: var(--xx-large);
+  }
+
+  /* 12px */
+  .p-lg-6 {
+    padding: var(--spacing-6) !important;
+  }
+
+  /* 24px */
+  .p-lg-8 {
+    padding: var(--spacing-8) !important;
   }
 
   /* 12px */
@@ -1115,6 +1156,12 @@ ol {
   .py-lg-24 {
     padding-top: var(--spacing-24);
     padding-bottom: var(--spacing-24);
+  }
+
+  /* 24px */
+  .px-lg-8 {
+    padding-left: var(--spacing-8) !important;
+    padding-right: var(--spacing-8) !important;
   }
 
   /* 40px */
